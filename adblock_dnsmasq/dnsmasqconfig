@@ -1,0 +1,10 @@
+#Mis configuraciones, colcoar las mismas al final del archivo dnsmasq para realizar el bloqueo de ads respectivo
+log-queries
+log-async=10
+log-facility=/var/log/dnsmasq.log
+
+# AdBlocking
+address=/0.0.0.0/0.0.0.0
+ptr-record=0.0.0.0.in-addr.arpa,0.0.0.0
+addn-hosts=/home/pi/Dnsscripts/hosts.blocked
+addn-hosts=/home/pi/Dnsscripts/blacklist.txt
